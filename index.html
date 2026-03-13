@@ -198,7 +198,51 @@
   <section class="sec cert-sec" id="certificados"><div class="ctn">
   <div class="sh rv"><div class="sh-ey" style="color:var(--accent2)">CERTIFICACION OFICIAL</div><h2 class="sh-t" style="color:var(--white)">Certificación de <span class="hl">150 horas académicas</span></h2></div>
   <div class="cert-flex">
-  <div class="cert-main rv"><img src="img/logistica-certificado-principal.webp" alt="Certificado principal" style="width:100%;border-radius:12px;margin-bottom:16px;display:none" class="cert-img-main" onload="this.style.display='block'"><div class="cert-hours">150</div><div class="cert-hours-label">Horas Académicas</div><h3>Especialista en Gestión Estratégica de Logística, Almacenes y Control de Inventarios</h3><p>Certificado avalado por ESAGEL Educación Ejecutiva en convenio con el Colegio de Ingenieros del Peru - CDP de Piura.</p><div class="cert-badge">ESAGEL + CIP PIURA</div></div>
+    <style>
+      .cert-main.rv {
+        position: relative;
+        width: 100%;
+        /* Proporción estándar de certificado (A4 horizontal) */
+        aspect-ratio: 1.414 / 1; 
+        border-radius: 12px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 20px;
+      }
+    
+      /* La imagen de fondo oscurecida */
+      .cert-main.rv::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: -1;
+        background-image: 
+          linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+          url('img/certificado/certicado logistica.png');
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+      }
+    
+      /* Ajustes de texto para que no se desborde */
+      .cert-main.rv h3 { font-size: 1.4rem; margin: 10px 0; max-width: 80%; }
+      .cert-hours { font-size: 3rem; font-weight: bold; line-height: 1; }
+      .cert-badge { font-weight: bold; margin-top: 15px; opacity: 0.9; }
+    </style>
+    
+    <div class="cert-main rv">
+      <div class="cert-hours">150</div>
+      <div class="cert-hours-label">Horas Académicas</div>
+      <h3>Especialista en Gestión Estratégica de Logística, Almacenes y Control de Inventarios</h3>
+      <p>Certificado avalado por ESAGEL Educación Ejecutiva en convenio con el Colegio de Ingenieros del Peru - CDP de Piura.</p>
+      <div class="cert-badge">ESAGEL + CIP PIURA</div>
+    </div>
+    
   <div class="cert-modules rv">
   <div class="cert-mod"><span>Certificado digital</span><h4>Dirección de KPIs Logísticos y Control de Costos</h4></div>
   <div class="cert-mod"><span>Certificado digital</span><h4>Planificación Estratégica de Materiales y Producción</h4></div>
@@ -211,11 +255,11 @@
   <section class="sec doc-sec" id="docentes"><div class="ctn">
   <div class="sh rv"><div class="sh-ey">DOCENTES EJECUTIVOS</div><h2 class="sh-t">+15 años de <span class="hl">experiencia</span></h2></div>
   <div class="doc-grid">
-  <div class="dc rv"><div class="dc-av"><img src="img/logistica-docente-1.webp" alt="Docente" style="width:100%;height:100%;object-fit:cover;border-radius:50%" onerror="this.style.display='none';this.parentElement.textContent='WA'">WA</div><h3>Ing. Wilfredo Albitres</h3><div class="dc-role">Ex Jefe de Almacen</div><div class="dc-co">CARTAVIO SAA</div></div>
-  <div class="dc rv"><div class="dc-av"><img src="img/logistica-docente-2.webp" alt="Docente" style="width:100%;height:100%;object-fit:cover;border-radius:50%" onerror="this.style.display='none';this.parentElement.textContent='MM'">MM</div><h3>Ing. Milton Martinez</h3><div class="dc-role">Jefe de Almacen Op. Logistico</div><div class="dc-co">LAB. HOFARM</div></div>
-  <div class="dc rv"><div class="dc-av"><img src="img/logistica-docente-3.webp" alt="Docente" style="width:100%;height:100%;object-fit:cover;border-radius:50%" onerror="this.style.display='none';this.parentElement.textContent='GR'">GR</div><h3>Ing. Gabriel Rosaperez</h3><div class="dc-role">Ex Jefe de Almacenes y Logística</div><div class="dc-co">PITATA SAC</div></div>
-  <div class="dc rv"><div class="dc-av"><img src="img/logistica-docente-4.webp" alt="Docente" style="width:100%;height:100%;object-fit:cover;border-radius:50%" onerror="this.style.display='none';this.parentElement.textContent='IM'">IM</div><h3>Ing. Infante Alvarado Manuel</h3><div class="dc-role">Ex Jefe de CDs Senior</div><div class="dc-co">ALICORP SAA</div></div>
-  <div class="dc rv"><div class="dc-av"><img src="img/logistica-docente-5.webp" alt="Docente" style="width:100%;height:100%;object-fit:cover;border-radius:50%" onerror="this.style.display='none';this.parentElement.textContent='GG'">GG</div><h3>Mag. Gonzalo Gonzales V.</h3><div class="dc-role">Ex Gerente de Logística</div><div class="dc-co">TECNOMINA SAC</div></div>
+  <div class="dc rv"><div class="dc-av"><img src="img/docentes/wilfredo.jpeg" alt="Docente" style="width:100%;height:100%;object-fit:cover;border-radius:50%" onerror="this.style.display='none';this.parentElement.textContent='WA'"></div><h3>Ing. Wilfredo Albitres</h3><div class="dc-role">Ex Jefe de Almacen</div><div class="dc-co">CARTAVIO SAA</div></div>
+  <div class="dc rv"><div class="dc-av"><img src="img/docentes/miltonmanueal.jpg" alt="Docente" style="width:100%;height:100%;object-fit:cover;border-radius:50%" onerror="this.style.display='none';this.parentElement.textContent='MM'"></div><h3>Ing. Milton Martinez</h3><div class="dc-role">Jefe de Almacen Op. Logistico</div><div class="dc-co">LAB. HOFARM</div></div>
+  <div class="dc rv"><div class="dc-av"><img src="img/docentes/grabirel rosap.jpg" alt="Docente" style="width:100%;height:100%;object-fit:cover;border-radius:50%" onerror="this.style.display='none';this.parentElement.textContent='GR'"></div><h3>Ing. Gabriel Rosaperez</h3><div class="dc-role">Ex Jefe de Almacenes y Logística</div><div class="dc-co">PITATA SAC</div></div>
+  <div class="dc rv"><div class="dc-av"><img src="img/docentes/infantealvarado.png" alt="Docente" style="width:100%;height:100%;object-fit:cover;border-radius:50%" onerror="this.style.display='none';this.parentElement.textContent='IM'"></div><h3>Ing. Infante Alvarado Manuel</h3><div class="dc-role">Ex Jefe de CDs Senior</div><div class="dc-co">ALICORP SAA</div></div>
+  <div class="dc rv"><div class="dc-av"><img src="img/docentes/gonzalogonzales.png" alt="Docente" style="width:100%;height:100%;object-fit:cover;border-radius:50%" onerror="this.style.display='none';this.parentElement.textContent='GG'"></div><h3>Mag. Gonzalo Gonzales V.</h3><div class="dc-role">Ex Gerente de Logística</div><div class="dc-co">TECNOMINA SAC</div></div>
   </div></div></section>
   
   <section class="sec ben-sec"><div class="ctn">
